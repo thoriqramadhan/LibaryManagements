@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\libaryRequest;
-use App\Models\libary;
+use App\Models\Libary;
 use Illuminate\Http\Request;
 
 class libaryController extends Controller
@@ -25,7 +25,7 @@ class libaryController extends Controller
         
     }
     public function show($id) {
-        $books = libary::find($id);
+        $books = Libary::find($id);
         return $books;
     }
 
