@@ -43,12 +43,12 @@ class libaryController extends Controller
     }
 
     public function edit($id){
-        $books = libary::find($id);
+        $books = Libary::find($id);
         return view('libarys.edit', compact('books'));
     }
     
     public function update(libaryRequest $request, $id){
-        $books = libary::find($id);
+        $books = Libary::find($id);
         $books->update([
             'buku' => $request->books,
             'user' => $request->user
@@ -57,7 +57,7 @@ class libaryController extends Controller
     }
 
     public function delete($id) {
-        $books = libary::find($id)
+        $books = Libary::find($id)
         ->delete();
         return redirect('/list');
     }
