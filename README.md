@@ -2,6 +2,11 @@
 Hello everyone!, this project is one of my school project.
 <p><b style="color:white;">Libary Management</b> will manage a data if someone borrow some books from the libary.</p>
 
+## Technology used in this project
+
+1. **Laravel**
+2. **Bootstrap**
+
 ## Here's some feature
 
 1. Can do **CRUD** in the website
